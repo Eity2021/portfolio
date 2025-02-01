@@ -32,7 +32,7 @@ export default function ProjectsDetailsModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton style={{ background: "rgb(20 15 35)" }}>
+      <Modal.Header style={{ background: "rgb(20 15 35)"}}>
         <Modal.Title
           id="contained-modal-title-vcenter"
           style={{ color: "#fff" }}

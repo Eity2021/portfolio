@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function CarouselSlider({allImages}) {
 
-    console.log( 'allImages', allImages)
+    // console.log( 'allImages', allImages)
   return (
 
 <Carousel data-bs-theme="dark">
