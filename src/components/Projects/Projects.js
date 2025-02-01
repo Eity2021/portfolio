@@ -40,8 +40,8 @@ function Projects() {
 
           { 
       portfolio.map((project) => (
-        <Col md={4} className="project-card">
-        <ProjectCard key={project.id} project={project}/>
+        <Col md={4} className="project-card" key={project.id}>
+        <ProjectCard  project={project}/>
         </Col>
       ))
 

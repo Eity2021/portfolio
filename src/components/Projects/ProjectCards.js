@@ -22,7 +22,7 @@ function ProjectCards(project) {
 
   return (
     <div>
-      <Card className="project-card-view">
+      <Card className="project-card-view"  onClick={() => navigateId(id)} style={{cursor:'pointer'}}>
         <Card.Img
           variant="top"
           src={image}

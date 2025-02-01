@@ -10,7 +10,7 @@ export default function ProjectsDetailsModal(props) {
 
   const projectArray = project.reduce((acc, obj) => ({ ...acc, ...obj }), {});
 
-  console.log("projectArray", projectArray);
+  // console.log("projectArray", projectArray);
   const { id, description, gitLink, allImages, languageInfo, name, liveLink } =
     projectArray;
   useEffect(() => {
@@ -55,7 +55,7 @@ export default function ProjectsDetailsModal(props) {
           {/* <span style={{fontSize:'18px' , fontWeight:'bold' ,paddingBottom:'20px'}}>Use </span> :  */}
 
           {languageInfo?.map((info) => (
-            <ul>
+            <ul key={info.id}>
               <li>{info}</li>
             </ul>
           ))}
