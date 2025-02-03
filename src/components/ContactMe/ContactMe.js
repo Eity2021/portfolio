@@ -33,7 +33,7 @@ export default function ContactMe() {
             </h1>
 
             <p style={{ textAlign: "justify" }}>
-            <span><Email></Email> </span>  Email : eity2021akter@gmail.com
+            <span><Email></Email> </span>  Email :marufa.webdev@gmail.com
               <br />
               <span><Phone></Phone> </span>Phone : +8801931382607 , +8801825897301
               <br />
