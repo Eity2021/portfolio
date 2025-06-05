@@ -35,7 +35,7 @@ function App() {
       {/* <Preloader load={load} /> */}
       <div className="App">
         <Navbar />
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
@@ -44,7 +44,7 @@ function App() {
           <Route path="/contact" element={<ContactMe />} />
          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

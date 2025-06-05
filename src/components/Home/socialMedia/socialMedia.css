@@ -1,0 +1,9 @@
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Optional: rotate if you want text from bottom to top */
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin-top: 2rem;
+  color: #fff;
+}

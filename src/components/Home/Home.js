@@ -1,47 +1,65 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
+import { Row, Col } from "react-bootstrap";
+import homeLogo from "../../Assets/Profile_img.png";
+
 import Type from "./Type";
+import SocialMedia from "./socialMedia/SocialMedia";
 
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+      <Row style={{ height: "100vh", width: "100vw" , background:"#0c0c0c"}}>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Marufa Akter Eity</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+        <Col md={6} className="home-header">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              height: "100%",
+              width: "100%",
+              gap: "100px",
+            }}
+          >
+            <div style={{ paddingLeft: "30px" }}>
+              <SocialMedia></SocialMedia>
+            </div>
+            <div
+              style={{ display: "flex", alignItems: "center", height: "100%" }}
+            >
+              <div>
+                <h1 className="heading-name">
+                  I'M
+                  <strong className="main-name"> Marufa Akter Eity</strong>
+                </h1>
+                <div>
+                  <Type />
+                </div>
+                <div style={{ marginTop: "20px" }}>
+                  <p style={{ color: "#fff", fontSize: "16px" }}>
+                    Passionate frontend developer crafting dynamic web apps{" "}
+                    <br />
+                    with clean code,MERN stack expertise, and a drive for <br />
+                    continuous learning.
+                  </p>
+                </div>
+                <div style={{ display: 'flex', gap: '20px' }}>
+                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: 'none', fontWeight: 'medium' }}>My Portfolio</button></div>
+                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: '1px solid #fff', background: 'none', color: '#fff' }}>Contact Me</button></div>
+                </div>
               </div>
-            </Col>
+            </div>
+          </div>
+        </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "550px" }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Home2 />
+        <Col md={6}>
+          <img
+            src={homeLogo}
+            alt="home pic"
+            // className="img-fluid"
+            style={{ width: "100%", height: "100vh",borderTop:'12px solid #0c0c0c',borderBottom:'12px solid #0c0c0c'}}
+          />
+        </Col>
+      </Row>
     </section>
   );
 }
