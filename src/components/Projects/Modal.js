@@ -9,7 +9,7 @@ function ModalComponent({ isOpen, closeModal, perProduct }) {
     <div >
       {isOpen && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{background:"#fff"}}>
             <button className="modal-close" onClick={closeModal}>
             <X />
             </button>
