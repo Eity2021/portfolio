@@ -4,8 +4,13 @@ import homeLogo from "../../Assets/Profile_img.png";
 
 import Type from "./Type";
 import SocialMedia from "./socialMedia/SocialMedia";
-
+import { useNavigate } from "react-router";
 function Home() {
+    let navigate = useNavigate();
+
+    const handlePortfolio = () => {
+      navigate('/project')
+    }
   return (
     <section>
       <Row style={{ height: "100vh", width: "100vw" , background:"#0c0c0c"}}>
@@ -43,8 +48,8 @@ function Home() {
                   </p>
                 </div>
                 <div style={{ display: 'flex', gap: '20px' }}>
-                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: 'none', fontWeight: 'medium' }}>My Portfolio</button></div>
-                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: '1px solid #fff', background: 'none', color: '#fff' }}>Contact Me</button></div>
+                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: 'none', fontWeight: 'medium' }} onClick={handlePortfolio}>My Portfolio</button></div>
+                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: '1px solid #fff', background: 'none', color: '#fff' }}>  <a style={{color: '#fff'}} href="https://drive.google.com/file/d/1EkoJeULmjJwzpFoBH84gkA8HdBSnArGb/view?usp=sharing" target="_blank">Resume</a></button></div>
                 </div>
               </div>
             </div>
