@@ -49,7 +49,7 @@ function Home() {
                 </div>
                 <div style={{ display: 'flex', gap: '20px' }}>
                   <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: 'none', fontWeight: 'medium' }} onClick={handlePortfolio}>My Portfolio</button></div>
-                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: '1px solid #fff', background: 'none', color: '#fff' }}>  <a style={{color: '#fff'}} href="https://drive.google.com/file/d/1EkoJeULmjJwzpFoBH84gkA8HdBSnArGb/view?usp=sharing" target="_blank">Resume</a></button></div>
+                  <div><button style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '6px', paddingBottom: '6px', border: '1px solid #fff', background: 'none', color: '#fff' }}>  <a style={{color: '#fff'}} href="https://drive.google.com/file/d/1oZukkhD8kNfY1e88Na1YE9sNPG4ei-F1/view" target="_blank">Resume</a></button></div>
                 </div>
               </div>
             </div>
